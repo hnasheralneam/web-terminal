@@ -30,6 +30,7 @@ let pwd = "/home/you";
    - allow a way to load in external commands with classes (like url to text file)
 - could consider classes for each type of file as well
 - add saving
+- fix input scrolling with too many characters
 */
 
 function listDirectory(keywords) {
@@ -128,6 +129,7 @@ function updateDirectoryVisual() {
 }
 
 function getDirectoryVisual() {
+   console.log(pwd)
    if (pwd[0] == "/" && pwd.includes("/home/you")) {
       return pwd.replace("/home/you", "~");
    }

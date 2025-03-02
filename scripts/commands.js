@@ -15,11 +15,11 @@ const commands = {
       newLine("time: shows the current time");
       newLine("sudo rm -rf /: gives free cookies");
       newLine("fetch: shows system info");
-      newLine("echo <text>: echos arguments");
+      newLine("echo &lt;text&gt;: echos arguments");
       newLine("ls: lists files in the current directory");
-      newLine("cd <dir>: changes directory");
-      newLine("mkdir <dir>: creates directory");
-      newLine("cat <file>: reads a file");
+      newLine("cd &lt;dir&gt;: changes directory");
+      newLine("mkdir &lt;dir&gt;: creates directory");
+      newLine("cat &lt;file&gt;: reads a file");
       newLine("background <valid css color>: changes the background color");
       newLine(
          "color <valid css color>: changes the color of the terminal text"

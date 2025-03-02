@@ -23,6 +23,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-y: auto;
+  line-height: 1.2em;
 }
 
 .current-line {
@@ -31,8 +32,6 @@ body {
 
 .terminal-input {
   width: 100%;
-  padding: 0;
-  margin: 0;
   border: none;
   outline: none;
   color: #ccc;
@@ -50,6 +49,9 @@ span.line {
   overflow-wrap: break-word;
 }
 
+.dir {
+  white-space: nowrap;
+}
 
 
 

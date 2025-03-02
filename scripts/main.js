@@ -40,7 +40,7 @@ document.querySelector(".terminal-input").addEventListener("keydown", (e) => {
 
    let inputLine = document.createElement("div");
 
-   inputLine.innerHTML = `<span class="terminal-text">you@computer:${getDirectoryVisual()}$&nbsp;<span class="terminal-input" style="inline-block">${input}</span>`;
+   inputLine.innerHTML = `<span class="terminal-text">you@computer:<span>${getDirectoryVisual()}</span>$&nbsp;<span class="terminal-input" style="inline-block">${input}</span>`;
    newLine(inputLine.innerHTML);
 
    let keywords = input.split(" ");
