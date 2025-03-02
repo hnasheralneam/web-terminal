@@ -17,6 +17,8 @@ const commands = {
       newLine("fetch: shows system info");
       newLine("echo <text>: echos arguments");
       newLine("ls: lists files in the current directory");
+      newLine("cd <dir>: changes directory");
+      newLine("mkdir <dir>: creates directory");
       newLine("cat <file>: reads a file");
       newLine("background <valid css color>: changes the background color");
       newLine(
@@ -55,10 +57,22 @@ const commands = {
    pwd: () => {
       newLine(pwd);
    },
-   ls: () => {
-      listDirectory();
+   ls: (keywords) => {
+      listDirectory(keywords);
    },
    cat: (keywords) => {
       readFile(keywords[1]);
+   },
+   cd: (keywords) => {
+      changeDirectory(keywords);
+   },
+   mkdir: (keywords) => {
+      makeDirectory(keywords);
+   },
+   touch: (keywords) => {
+      createFile(keywords);
+   },
+   rm: (keywords) => {
+      removeItem(keywords);
    }
 };
